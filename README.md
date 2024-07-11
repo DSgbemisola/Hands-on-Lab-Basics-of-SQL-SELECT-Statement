@@ -27,7 +27,7 @@ Some database systems require a semicolon at the end of each SQL statement for e
 
 # Software Used in this Project
 
-In this project, I used PgAdmin 4 (PostgreSQL 15)
+In this project, I used PgAdmin 4 (PostgreSQL 15).
 
 # Database Used in this Lab
 
