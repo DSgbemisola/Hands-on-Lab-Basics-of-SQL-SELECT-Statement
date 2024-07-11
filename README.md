@@ -4,7 +4,7 @@ This is an hands-on project to demostrate skills on writing basic SQL SELECT sta
 
 # Objectives
 
-The objective this project are to:
+The objective of this project are to:
 
 1. Write SQL statements to query SanFranciscoFilmLocations database
 2. Retrieve data records from the filmlocations table according to the specified criteria.
