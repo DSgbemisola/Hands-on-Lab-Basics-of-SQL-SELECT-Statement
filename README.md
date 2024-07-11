@@ -32,11 +32,11 @@ Dataset id downloadable here: https://drive.google.com/file/d/1xzX-gZTRZBT3XHwSJ
 # Project Phases
 The project was conducted in Three (3) phases as detailed below:
 
-# Phase 1: Creating a Database and Table in PgAdmin
-The first phase of the project involved creating a database and a table in PgAdmin, followed by loading data from a CSV file. I achieved this going through the following steps:
+# Phase 1: Creating the SanFranciscoFilmLocations Database and filmlocations Table in PgAdmin
+The first phase of the project involved creating our SanFranciscoFilmLocations Database and filmlocations Table in PgAdmin, followed by loading the FilmLocations CSV file. I achieved this by going through the following steps:
 
 # Step 1: Creating a Database
-1. I Opened PgAdmin on my local computer and connected to my PostgreSQL server,
+1. I opened PgAdmin on my local computer and connected to my PostgreSQL server,
 2. Right-clicked on the "Databases" node in the Browser panel on the left-hand side,
 3. Selected "Create" > "Database",
 4. In the "New Database" window:
