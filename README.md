@@ -143,6 +143,7 @@ Solution: I retrieved the names of all films released in the 20th century and be
 # Task 6: Retrieve the names, production company names, filming locations, and release years of the films which are not written by James Cameron.
 
 Solution: I retrieved the title, production company names, filming locations, and release years of the films which are not written by James Cameron using the SQL statement below:
+         
          SELECT title as film_title, productioncompany as production_company_name, 
          locations as filming_location, releaseyear as year_of_release
          FROM filmlocations
