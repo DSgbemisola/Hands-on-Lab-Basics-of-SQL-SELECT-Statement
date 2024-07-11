@@ -1,10 +1,10 @@
 # Hands-on-Project-Basics-of-SQL-SELECT-Statement
-This is an hands-on project to demostrate skills on writing SQL (Structured Query Language) statements.
+This is an hands-on project to demostrate skills on writing basic SQL SELECT statements.
 
 # Objectives
 The objective this project are to:
-1. Write SQL statements to query a database
-2. Retrieve data records from the table of a database as resultset according to the specified criteria.
+1. Write SQL statements to query SanFranciscoFilmLocations database
+2. Retrieve data records from the filmlocations table according to the specified criteria.
    
 # Highlights
 1. How does the syntax of a SELECT statement look?
@@ -84,20 +84,20 @@ See screenshot of the resultset:
 # Phase 3: Writing SQL statements to query and answer questions on SanFranciscoFilmLocations database
 
 # Task 1: Retrieve details of all the films from the filmlocations table with the details of each film record containing all the film columns.
-Solution: I lauched the "Query tool" tab, and typed the SQL statement to retrieve all records with all columns from the filmlocations table as follows:
+Solution: I retrieved all records with all columns from the filmlocations table  using the SQL statement below:
           SELECT * FROM filmlocations;
 ![image](https://github.com/DSgbemisola/Hands-on-Lab-Basics-of-SQL-SELECT-Statement/assets/116846702/dadec81b-7a1c-4de8-9b76-b0824488c4d4)
 
 # Task 2: Retrieve selective details of all the film records; retrieve the names of all the films along with director names and writer names.
 
-Solution: I lauched the "Query tool" tab, and typed the SQL statement to retrieve the names of all films with director names and writer names as follows:
+Solution: I retrieved the names of all films with director names and writer names using the SQL statement below:
           SELECT title as film_title, director as director_name,  writer as writer_name 
           FROM filmlocations;
 ![image](https://github.com/DSgbemisola/Hands-on-Lab-Basics-of-SQL-SELECT-Statement/assets/116846702/ce1608e4-4e80-4d7b-be60-6f2eb1adaed0)
 
 # Task 3: Retrieve film names along with filming locations and release years, also restrict the output resultset to retrieve only the film records released in 2001 and onwards.
 
-Solution: I lauched the "Query tool" tab, and typed the SQL statement to retrieve the names of all films released in the 21st century and onwards (release years after 2001 including 2001), along with filming locations and release years as follows:
+Solution: I retrieved the names of all films released in the 21st century and onwards (release years after 2001 including 2001), along with filming locations and release years  using the SQL statement below:
           SELECT title as film_title, locations as filming_location, releaseyear as year_of_release
           FROM filmlocations
           WHERE releaseyear >= 2001;
@@ -105,14 +105,14 @@ Solution: I lauched the "Query tool" tab, and typed the SQL statement to retriev
 
 # Task 4: Retrieve the fun facts and filming locations of all films.
 
-Solution: I lauched the "Query tool" tab, and typed the SQL statement to retrieve only the fun facts and location columns as follows:
+Solution: I retrieved the fun facts and location columns along with the film titles using the SQL statement below:
           SELECT title as film_title, funfacts as fun_facts, locations as filming_location
           FROM filmlocations;
 ![image](https://github.com/DSgbemisola/Hands-on-Lab-Basics-of-SQL-SELECT-Statement/assets/116846702/471b9d3e-b1c5-4bbf-9c8e-c0e5fc12b94b)
 
 # Task 5: Retrieve the names of all films released in the 20th century and before (release years before 2000 including 2000) that, along with filming locations and release years.
 
-Solution: I lauched the "Query tool" tab, and typed the SQL statement to retrieve the names of all films released in the 20th century and before (release years before 2000 including 2000) that, along with filming locations and release years as follows:
+Solution: I retrieved the names of all films released in the 20th century and before (release years before 2000 including 2000) that, along with filming locations and release years using the SQL statement below:
           SELECT title as film_title, locations as filming_location, releaseyear as year_of_release
           FROM filmlocatios
           WHERE releaseyear <= 2000;
@@ -120,7 +120,10 @@ Solution: I lauched the "Query tool" tab, and typed the SQL statement to retriev
 
 # Task 6: Retrieve the names, production company names, filming locations, and release years of the films which are not written by James Cameron.
 
-
-
-
+Solution: I retrieved the title, production company names, filming locations, and release years of the films which are not written by James Cameron using the SQL statement below:
+         SELECT title as film_title, productioncompany as production_company_name, 
+         locations as filming_location, releaseyear as year_of_release
+         FROM filmlocations
+         WHERE writer <> 'James Cameron';   
+![image](https://github.com/DSgbemisola/Hands-on-Lab-Basics-of-SQL-SELECT-Statement/assets/116846702/64101602-bfc4-411e-b974-bc999ef34964)
 
